@@ -20,8 +20,8 @@ public class InsertionSort {
 
     // read in a sequence of words from standard input and print
     // them out in sorted order
-    public static void main(String[] args) {
-        String[] a = {"wendy", "alice", "bob", "jack"};
+    public static void main(String[] args) throws Exception {
+        String[] a = Merge.getUnsortedNames();
         sort(a);
         for (int i = 0; i < a.length; i++) {
             StdOut.print(a[i] + " ");
